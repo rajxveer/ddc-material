@@ -36,7 +36,7 @@ then
    echo "Starting Artifact Deployment"
    echo "########################################"
    mkdir -p $TEMPDIR
-   cd $TEMPDIR
+   cd $TEMPDIR || exit
    echo
 
    wget $URL > /dev/null
@@ -88,7 +88,7 @@ else
    echo "Starting Artifact Deployment"
    echo "########################################"
    mkdir -p $TEMPDIR
-   cd $TEMPDIR
+   cd $TEMPDIR || exit
    echo
 
    wget $URL > /dev/null
